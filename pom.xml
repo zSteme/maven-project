@@ -10,10 +10,11 @@
   <name>Maven Project</name>
   <description>Sample Maven project with a working, deployable site.</description>
   <url>http://www.example.com</url>
-
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+     <maven.compiler.source>11</maven.compiler.source>
+     <maven.compiler.target>11</maven.compiler.target>
   </properties>
 
   <modules>
@@ -31,14 +32,13 @@
 
   <build>
     <plugins>
-      <plugin>
+      <!--plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
           <source>1.6</source>
           <target>1.6</target>
         </configuration>
-      </plugin>
-
+      </plugin-->
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
         <configuration>
